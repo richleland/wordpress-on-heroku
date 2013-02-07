@@ -37,6 +37,9 @@ http {
     root              /app/public;
     index             index.php;
 
+    # allow larger file uploads
+    client_max_body_size 8M;
+
     # Use gzip compression
     gzip_static         on;
     gzip                on;
